@@ -1,0 +1,16 @@
+.card {
+    margin-bottom: 20px;
+  }
+
+  .dayOfWeek {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .temperature {
+    font-size: 2rem;
+  }
+
+  .description {
+    text-transform: capitalize;
+  }
