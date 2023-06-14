@@ -14,3 +14,46 @@
   .description {
     text-transform: capitalize;
   }
+
+  .container-fluid {
+  padding: 20px;
+}
+
+.header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 20px; background-color:gray; width: 500px; height: 200px;
+}
+
+#city-label {
+  font-weight: bold;
+}
+
+#searchHistoryList {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#currentWeather {
+  height: 100%;
+}
+
+#fiveDayForecast {
+  height: 100%;
+}
+#forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .col-md-3,
+  .col-md-9 {
+    margin-bottom: 20px;
+  }
+}
