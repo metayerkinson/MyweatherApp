@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="k.css">
+    <link rel="stylesheet" href="weather.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> "
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -22,30 +22,29 @@
                 <p>Search for a city to get the current weather and a 5-day forecast.</p>
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-3">
-                <form id="city-search-form">
-                    <div class="form-group">
-                        <label for="citySearch" id="city-label">Search for a City:</label>
-                        <input type="text" class="form-control" id="citySearch" placeholder="Enter a city">
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
-                </form><br>
-
-                <div class="">
-                    <div class="card" id="searchHistory">
-                        <div class="card-body">
-                            <h5 class="card-title">Search History</h5>
-                            <ul class="list-group" id="searchHistoryList">
-                            </ul>
-                        </div>
-                    </div>
+              <form id="city-search-form">
+                <div class="form-group">
+                  <label for="citySearch" id="city-label">Search for a City:</label>
+                  <input type="text" class="form-control" id="citySearch" placeholder="Enter a city">
                 </div>
+                <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
+              </form><br>
+              <div id="resultContainer"></div>
             </div>
-            <!-- </div> -->
-
-            <!-- <div class="row"> -->
+          </div>
+<div id="Searchcity"> Search History</div>
+                <div class="card" id="searchHistory">
+                  <div class="card-body">
+                    <h5 class="card-title">Search History</h5>
+                    <ul class="list-group" id="searchHistoryList"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
             <div class="col-md-9">
                 <div class="card" id="currentWeather">
                     <div class="card-body">
@@ -61,7 +60,7 @@
                 <div class="card " id="fiveDayForecast">
                     <div class="card-body">
                         <h5 class="card-title" id="forecast-title">5-Day Forecast</h5>
-
+                        <div id="forecast-container"></div>
                     </div>
                 </div>
             </div>

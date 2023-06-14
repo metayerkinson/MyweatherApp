@@ -191,6 +191,6 @@ var pageLoadHandler = function () {
 
 // event listeners
 citySearchFormEl.addEventListener("submit", formSubmitHandler);
-// cityListEl.addEventListener("click", cityClickHandler);
-// clearHistoryEl.addEventListener("click", clearHistoryHandler);
-// window.addEventListener("load", pageLoadHandler);
+//  cityListEl.addEventListener("click", cityClickHandler);
+//  clearHistoryEl.addEventListener("click", clearHistoryHandler);
+ window.addEventListener("load", pageLoadHandler);
