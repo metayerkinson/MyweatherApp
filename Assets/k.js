@@ -40,6 +40,7 @@ var getCurrentWeather = function (city) {
           renderCityList();
           currentWeather.style.border = "2px solid grey";
           cityListEl.style.borderTop = "2px solid grey";
+
         });
       } else {
         alert("Error: " + response.statusText);
@@ -49,6 +50,8 @@ var getCurrentWeather = function (city) {
       alert("Unable to connect to OpenWeather");
     });
 };
+
+// new code
 
 // function to get the city list
 var getCityList = function () {
@@ -194,3 +197,4 @@ citySearchFormEl.addEventListener("submit", formSubmitHandler);
 //  cityListEl.addEventListener("click", cityClickHandler);
 //  clearHistoryEl.addEventListener("click", clearHistoryHandler);
  window.addEventListener("load", pageLoadHandler);
+
